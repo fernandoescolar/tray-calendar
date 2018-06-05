@@ -11,15 +11,20 @@ let config = new Configuration();
 console.log(process.execPath)
 console.log(process.platform)
 
+function setTrayTitle(): void {
+    let m = moment()
+    m.locale(config.locale)
+    tray.setTitle(m.format(config.dateformat))
 
+}
 function createTray(): void {
     tray = new Tray(path.join(__dirname, '..', 'assets', 'clock.png'))
-    tray.setTitle(moment().format(config.dateformat))
     tray.on('right-click', toggleWindow)
     tray.on('double-click', toggleWindow)
     tray.on('click', function (event) {
         toggleWindow()
     })
+    setTrayTitle()
 }
 
 function getWindowPosition(): {x: number, y: number} {
@@ -77,7 +82,7 @@ function showWindow(): void {
 function createInterval(): void {
     deleteInterval();
     intervalHandler = setInterval(() => {
-        tray.setTitle(moment().format(config.dateformat))
+        setTrayTitle()
     }, 1000);
 }
 
