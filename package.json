@@ -1,0 +1,40 @@
+{
+  "name": "tray-calendar",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "description": "",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "author": {
+    "name": "Fernando Escolar",
+    "email": "f.escolar@hotmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fernandoescolar/tray-calendar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fernandoescolar/tray-calendar/issues"
+  },
+  "tags": [
+    "calendar",
+    "typescript",
+    "tray",
+    "electron"
+  ],
+  "scripts": {
+    "start": "tsc && electron src/main.js",
+    "package": "electron-packager ./ --platform=darwin --arch=x64 --out=out --icon=./icon.icns --overwrite"
+  },
+  "dependencies": {
+    "electron": "^2.0.2",
+    "electron-config": "^1.0.0",
+    "moment": "^2.22.1"
+  },
+  "devDependencies": {
+    "@types/electron-config": "^0.2.1",
+    "electron-packager": "^7.3.0",
+    "electron-prebuilt": "^1.2.7",
+    "typescript": "^2.8.3"
+  }
+}

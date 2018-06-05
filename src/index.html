@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="../vendor/photon/css/photon.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="./calendar/calendar.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="./index.css" media="screen" charset="utf-8">
+    <script charset="utf-8">require('./index')</script>
+  </head>
+  <body>
+    <div class="header-arrow"></div>
+    <div class="window">
+      <header class="toolbar toolbar-header">
+        <h1 class="title">Calendar</h1>
+      </header>
+
+      <div class="window-content">
+        <div class="pane">
+          <div id="calendar-container" class="panel visible">
+        
+          </div>
+
+          <div id="config-container" class="panel">
+            <form>
+                <div class="form-group">
+                  <label>Format</label>
+                  <input id="dateformat" type="text" class="form-control" placeholder="ddd DD MMM HH:mm">
+                </div>
+                <div class="form-group">
+                  <label>Locale</label>
+                  <input id="locale" type="text" class="form-control" placeholder="en-US">
+                </div>
+                <div class="form-group">
+                  <label>First day</label>
+                  <select id="firstDayOfWeek" class="form-control">
+                    <option value="0">Sunday</option>
+                    <option value="1">Monday</option>
+                    <option value="2">Tuesday</option>
+                    <option value="3">Wednesday</option>
+                    <option value="4">Thursday</option>
+                    <option value="5">Friday</option>
+                    <option value="6">Saturday</option>
+                  </select>
+                </div>
+                <div class="checkbox">
+                  <label>
+                    <input id="autostart" type="checkbox"> Run at startup
+                  </label>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>
+
+      <footer class="toolbar toolbar-footer">
+          <span id="settings" class="config icon icon-cog" click="togglePanel()"></span>
+      </footer>
+    </div>
+  </body>
+</html>

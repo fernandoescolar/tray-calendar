@@ -1,0 +1,76 @@
+:root {
+    --background-color: #f5f5f4;
+    --text-color: #333;
+    --window-border-radius: 6px;
+    --font-size: 14px;
+}
+
+/* The arrow at the top of the window */
+.header-arrow {
+    position: absolute;
+    top: 2px;
+    left: 50%;
+    margin-left: -5px;
+    height: 10px;
+    width: 10px;
+    transform: rotate(45deg);
+    background-color: #e8e6e8;
+}
+
+.window {
+    position: absolute;
+    top: 5px;
+}
+
+.toolbar {
+    box-shadow: none;
+}
+
+.window, .toolbar-header {
+    border-top-left-radius: var(--window-border-radius);
+    border-top-right-radius: var(--window-border-radius);
+}
+
+.window-content {
+    background-color: var(--background-color);
+}
+
+.calendar-container tbody {
+    background: transparent;
+}
+
+.panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.panel.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.panel form {
+    padding: 15px;
+}
+
+.form-control {
+    width: 250px;
+}
+
+label {
+    clear: both;
+    float: left;
+    width: 65px;
+}
+
+.checkbox {
+    margin-top: 15px;
+}
+
+.checkbox label {
+    width: 150px;
+}

@@ -1,0 +1,42 @@
+#calendar-container {
+    height: 100%;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.calendar .header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+.calendar .header .button {
+    cursor: pointer;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.calendar .header .title {
+    font-size: 24px;
+    width: 200px;
+    display: inline-block;
+}
+
+.calendar table tr td {
+    text-align: center;
+}
+
+.calendar table tr td.today {
+    background-color: #116cd6;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.config {
+    float: right;
+    margin-right: 5px;
+    cursor: pointer;
+}
