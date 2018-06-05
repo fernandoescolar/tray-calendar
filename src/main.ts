@@ -89,7 +89,7 @@ function deleteInterval(): void {
 }
 
 if (app.dock) {
-//   app.dock.hide();
+   app.dock.hide();
 }
 
 app.on("ready", () => {
