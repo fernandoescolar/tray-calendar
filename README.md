@@ -4,7 +4,7 @@ An example app for building a native-looking Mac OS X tray app with a popover an
 
 The app shows a tray icon with the date information and when you press it, it shows a calendar.
 
-![tray-calendar](https://github.com/fernandoescolar/tray-calendar/raw/master/assets/capture.png "Tray Calendar Running")
+![tray-calendar](https://github.com/fernandoescolar/tray-calendar/raw/master/assets/screenshot.png "Tray Calendar Running")
 
 Built with [photon](http://photonkit.com).
 
@@ -24,4 +24,4 @@ npm run package
 open out/tray-calendar-darwin-x64/tray-calendar.app
 ```
 
-![screenshot](https://github.com/fernandoescolar/tray-calendar/raw/master/assets/capture.png)
+![screenshot](https://github.com/fernandoescolar/tray-calendar/raw/master/assets/screenshot.png)
