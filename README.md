@@ -24,4 +24,3 @@ npm run package
 open out/tray-calendar-darwin-x64/tray-calendar.app
 ```
 
-![screenshot](https://github.com/fernandoescolar/tray-calendar/raw/master/assets/screenshot.png)
